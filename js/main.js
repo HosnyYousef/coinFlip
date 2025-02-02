@@ -19,16 +19,15 @@
         var x = Math.floor(Math.random() * 2);
         console.log(x);
         if (x == 0) {
-        document.querySelector('#heads').classList.add = 'hidden'
+        document.querySelector('#heads').classList.toggle = 'hidden'
+        tails.style.display = 'none'
     } else {
         document.querySelector('#tails').classList.toggle = 'hidden'
+        heads.style.display = 'none'
       }
 }
 
-
-
 // document.querySelector('#flipButton').addEventListener('click', flip)
-
 
 // function flip (){
 //    return Math.random() < 0.5;
