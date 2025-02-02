@@ -1,9 +1,6 @@
 
-
 // click button, show one of the images
 // calculation to show image 50%
-// 
-
 
 // eventListener for button
     // if clicked, iniate calcualtion
