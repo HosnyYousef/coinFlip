@@ -21,9 +21,22 @@
 /* BASE STYLES
 /*******************************************/
 
+/* COINS */
 .coins {
      width: 500px;
 }
+
+/* text */
+#mainText {
+     text-align :center;
+}
+
+/* BUTTON */
+#flipButton {
+     text-align :center;
+}
+
+
 
 body {
 
