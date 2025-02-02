@@ -11,15 +11,29 @@
         //and iniate calcualtion again
     // 
 
-document.querySelector('#flipButton').addEventListener('click', flip)
+    document.querySelector('#flipButton').addEventListener('click', flip)
 
-let heads = document.querySelector('#heads')
-let tails = document.querySelector('#tails')
-
-function flip (){
-   return Math.random() < 0.5;
-   //choose one img and hide the other
-   //
+    function flip (){
+        let heads = document.querySelector('#heads')
+        let tails = document.querySelector('#tails')
+        var x = Math.floor(Math.random() * 2);
+        console.log(x);
+        if (x == 0) {
+        heads.style.visability = 'hidden'
+    } else {
+        tails.style.visability = 'hidden'
+      }
 }
+
+
+
+// document.querySelector('#flipButton').addEventListener('click', flip)
+
+
+// function flip (){
+//    return Math.random() < 0.5;
+//    //choose one img and hide the other
+//    //
+// }
 
 // return Math.random() < 0.5;
