@@ -11,4 +11,13 @@
         //and iniate calcualtion again
     // 
 
-const coin = document.querySelector('')
+document.querySelector('#flipButton').addEventListener('click', flip)
+
+let heads = document.querySelector('#heads')
+let tails = document.querySelector('#tails')
+
+function flip (){
+   return Math.random() < 0.5;
+}
+
+// return Math.random() < 0.5;

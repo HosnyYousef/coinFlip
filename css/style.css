@@ -36,10 +36,11 @@
      text-align :center;
 }
 
-
+/* background/text */
 
 body {
-
+     background-color: black;
+     color: white;
 }
 
 
