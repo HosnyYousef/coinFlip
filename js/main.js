@@ -19,9 +19,9 @@
         var x = Math.floor(Math.random() * 2);
         console.log(x);
         if (x == 0) {
-        heads.style.visability = 'hidden'
+        document.querySelector('#heads').classList.add = 'hidden'
     } else {
-        tails.style.visability = 'hidden'
+        document.querySelector('#tails').classList.toggle = 'hidden'
       }
 }
 
