@@ -18,6 +18,8 @@ let tails = document.querySelector('#tails')
 
 function flip (){
    return Math.random() < 0.5;
+   //choose one img and hide the other
+   //
 }
 
 // return Math.random() < 0.5;
