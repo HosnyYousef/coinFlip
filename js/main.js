@@ -22,20 +22,23 @@
 
 document.querySelector('#flipButton').addEventListener('click', flip)
 
-function flip(event) {
+function flip() {
     let heads = document.querySelector('#heads')
     let tails = document.querySelector('#tails')
-    let result = document.getElementsByClassName("coin");
-    var x = Math.floor(Math.random() * 2);
+    // let result = document.getElementsByClassName("coins");
+
+    let x = Math.floor(Math.random() * 2);
     console.log(x);
     if (x == 0) {
-        document.querySelector('#heads').classList.toggle = 'hidden'
-        result.innerHTML = "<img alt=\"the frontside of a coin\" src=\"img/heads.webp\" />";
-        tails.style.display = 'none'
+        heads.classList.remove("hidden")
+        tails.classList.add("hidden")
+        // result.innerHTML = "<img alt=\"the frontside of a coin\" src=\"img/heads.webp\" />";
+        // tails.style.display = 'none'
     } else if (x == 1) {
-        document.querySelector('#tails').classList.toggle = 'hidden'
-        result.innerHTML = "<img alt=\"the backside of a coin\" src=\"img/tails.webp\" />";
-        heads.style.display = 'none'
+        tails.classList.remove("hidden")
+        heads.classList.add("hidden")
+        // result.innerHTML = "<img alt=\"the backside of a coin\" src=\"img/tails.webp\" />";
+        // heads.style.display = 'none'
     }
 }
 
